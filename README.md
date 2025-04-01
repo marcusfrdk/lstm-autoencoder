@@ -22,6 +22,12 @@ cd lstmac
 pip3 install -e .[dev]
 ```
 
+## Testing
+
+```bash
+pytest --verbosity=0
+```
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.

@@ -28,6 +28,12 @@ pip3 install -e .[dev]
 pytest --verbosity=0
 ```
 
+## Sources
+
+-   [Time Series Anomaly Detection using LSTM Autoencoders](https://github.com/curiousily/Getting-Things-Done-with-Pytorch/blob/master/manuscript/06.time-series-anomaly-ecg.md)
+-   [From Autoencoder to Beta-VAE](https://lilianweng.github.io/posts/2018-08-12-vae/)
+-   [Long Short-Term Memory](https://en.wikipedia.org/wiki/Long_short-term_memory)
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.

@@ -1,0 +1,53 @@
+[project]
+name = "lstm-autoencoder"
+version = "0.1.0"
+description = "This is a simple implementation of an LSTM autoencoder built without the use of any deep learning libraries. "
+authors = [
+    { name = "Marcus Fredriksson", email = "marcus@marcusfredriksson.com" },
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = { file = "LICENSE" }
+requires-python = ">=3.11"
+readme = "README.md"
+keywords = [
+    "education",
+    "lstm",
+    "autoencoder",
+    "deep-learning",
+    "anomaly-detection",
+]
+dependencies = ["numpy>=2.2.4", "pandas>=2.2.3"]
+
+[project.optional-dependencies]
+build = ["build", "twine"]
+dev = [
+    "black>=24.10.0",
+    "pytest>=8.3.4",
+    "isort>=5.13.2",
+    "pylint>=3.3.2",
+    "pre-commit>=4.0.1",
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["lstm", "lstm.*"]
+
+[tool.black]
+line-length = 80
+target-version = ['py311']
+
+[tool.isort]
+profile = "black"
+line_length = 80
+
+[project.urls]
+Homepage = "https://github.com/marcusfrdk/lstm-autoencoder"
+Repository = "https://github.com/marcusfrdk/lstm-autoencoder"
+Issues = "https://github.com/marcusfrdk/lstm-autoencoder/issues"
